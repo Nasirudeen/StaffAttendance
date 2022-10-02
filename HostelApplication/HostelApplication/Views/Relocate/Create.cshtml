@@ -1,0 +1,201 @@
+﻿
+@model HostelApplication.Models.Relocate;
+@{
+    ViewData["Title"] = "Relocate Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<div class="text-left">
+    <h1 class="text-info">Add New Relocate</h1>
+</div>
+<br />
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-6">
+        @using (@Html.BeginForm("Create", "Relocate", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="MatricNo" id="MatricNo-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="MatricNo" name="MatricNo" id="MatricNo" type="text" required placeholder="enter your MatricNo" class="form-control" />
+                    <span asp-validation-for="MatricNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="LastName" id="LastName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="LastName" name="LastName" id="LastName" type="text" required placeholder="enter your LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="FirstName" id="FirstName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="FirstName" name="FirstName" id="FirstName" type="text" required placeholder="enter your FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="OtherName" id="OtherName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="OtherName" name="OtherName" id="OtherName" type="text" required placeholder="enter your OtherName" class="form-control" />
+                    <span asp-validation-for="OtherName" class="text-danger"></span>
+                </div>
+            </div>
+
+            
+             <div class="form-group row">
+                <label  class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Faculty</label>
+                <div class="col-sm-6">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" name="Faculty">
+                        <option value="SelectFaculty" disabled>Select Faculty</option>
+                        @foreach (var u in ViewBag.Faculty as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span  class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+              <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Department</label>
+                <div class="col-sm-6">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" name="Department" @*asp-for="User"*@>
+                        <option value="SelectDepartment" disabled>Select Department</option>
+                        @foreach (var u in ViewBag.Department as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label style="font-size:35px" class="control-label col-sm-3">StudentLevel</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:65px;" id="StudentLevel" name="StudentLevel" asp-for="StudentLevel">
+                        <option value="SelectStudentLevel" disabled>Select StudentLevel</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                        <option value="500">500</option>
+                        <option value="600">600</option>
+                        <span asp-validation-for="StudentLevel" class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Course</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" id="Course" name="Course" @*asp-for="User"*@>
+                        <option value="Selected Course">Select Course</option>
+                        @foreach (var u in ViewBag.Course as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+               <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Hall</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" id="Hall" name="Hall" @*asp-for="User"*@>
+                        <option value="Selected Hall">Select Hall</option>
+                        @foreach (var u in ViewBag.Hall as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+               <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Block</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" id="Block" name="Block" @*asp-for="User"*@>
+                        <option value="Selected Block">Select Block</option>
+                        @foreach (var u in ViewBag.Block as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+               <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Room</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" id="Room" name="Room" @*asp-for="User"*@>
+                        <option value="Selected Room">Select Room</option>
+                        @foreach (var u in ViewBag.Room as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+               <div class="form-group row">
+                <label @*asp-for="CollegeProvostName"*@ class="control-label col-sm-3" style="font-size:35px" class="control-label col-sm-3">Bunk</label>
+                <div class="col-sm-2">
+                    <select class="form-control inputstl" style="width: 450px; font-size: 25px; height:50px;" id="Bunk" name="Bunk" @*asp-for="User"*@>
+                        <option value="Selected Bunk">Select Bunk</option>
+                        @foreach (var u in ViewBag.Bunk as List<SelectListItem>)
+                        {
+                            <option value="@u.Text">@u.Text</option>
+                        }
+                        <span @*asp-validation-for="User"*@ class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label style="font-size:35px" asp-for="StartDate" id="StartDate-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StartDate" name="StartDate" id="StartDate" type="text" required placeholder="enter your StartDate" class="form-control" />
+                    <span asp-validation-for="StartDate" class="text-danger"></span>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label style="font-size:35px" asp-for="ExpireDate" id="ExpireDate-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="ExpireDate" name="ExpireDate" id="ExpireDate" type="text" required placeholder="enter your ExpireDate" class="form-control" />
+                    <span asp-validation-for="ExpireDate" class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="Submit" class="btn btn-lg btn-block btn-info w-100" />
+                </div>
+                <div>
+                    <a asp-action="Index" class="btn btn-lg btn-block btn-info w-100"><i class="fas fa-sign-out-alt"></i>&nbspBack to List</a>
+
+                </div>
+            </div>
+
+
+        }
+
+        <script type="text/javascript">
+@if (TempData["status"] != null)
+{
+    <text>alert('entry Created Successfully'); </text>
+}
+
+        </script>
+
+
+
+
+
+
+
+

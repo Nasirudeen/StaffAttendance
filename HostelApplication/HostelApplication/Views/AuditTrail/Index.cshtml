@@ -1,0 +1,130 @@
+﻿@model IEnumerable<HostelApplication.Models.AuditTrail>
+
+@{
+    ViewData["Title"] = "Audit Trail Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br
+<br />
+<br />
+
+<div class="col-8">
+    <h1 class="text-info">Audit Trail List</h1>
+</div>
+
+<div class="form-border" style="margin-top:40px;">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-striped table-hover" id="jayb1">
+            <thead style="background-color:azure;">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AuditTrailId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ObjectName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NewValue)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Action)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CreatedBy)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IpAddress)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Created)
+                    </th>
+                    <th>
+
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    var Id = item.AuditTrailId;
+
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AuditTrailId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ObjectName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewValue)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Action)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CreatedBy)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IpAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Created)
+                        </td>
+
+
+                        <td>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <center> <p><b>No items is created</b></p></center>
+    }
+</div>
+
+
+
+<script>
+
+
+    $(document).ready(function () {
+        $("#jayb1").DataTable();
+
+        $("#dialog-form").dialog({
+            modal: true
+        });
+    });
+
+
+
+</script>
+@section Scripts{
+    <script>
+
+
+        $(document).ready(function () {
+            $("#jayb1").DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'pdf', 'print'
+                ]
+            });
+
+            $("#dialog-form").dialog({
+                modal: true
+            });
+
+        });
+
+
+
+    </script>
+}

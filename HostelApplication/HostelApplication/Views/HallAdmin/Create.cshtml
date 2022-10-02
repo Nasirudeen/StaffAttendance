@@ -1,0 +1,100 @@
+﻿@model HostelApplication.Models.HallAdmin;
+@{
+    ViewData["Title"] = "HallAdmin Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<div class="text-left">
+    <h1 class="text-info">Add New HallAdmin</h1>
+</div>
+<br />
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-6">
+        @using (@Html.BeginForm("Create", "HallAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+              
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Title" id="Title-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Title" name="Title" id="Title" type="text" required placeholder="enter your Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="HallAdminName" id="HallAdminName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="HallAdminName" name="HallAdminName" id="HallAdminName" type="text" required placeholder="enter your HallAdminName" class="form-control" />
+                    <span asp-validation-for="HallAdminName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="StaffNo" id="StaffNo-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StaffNo" name="StaffNo" id="StaffNo" type="text" required placeholder="enter your StaffNo" class="form-control" />
+                    <span asp-validation-for="StaffNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="PhoneNo" id="PhoneNo-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="PhoneNo" name="PhoneNo" id="PhoneNo" type="text" required placeholder="enter your PhoneNo" class="form-control" />
+                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                </div>
+            </div>
+          
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="EmailAddress" id="EmailAddress-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="EmailAddress" name="EmailAddress" id="EmailAddress" type="text" required placeholder="enter your EmailAddress" class="form-control" />
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label style="font-size:35px" asp-for="Rank" id="Rank-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Rank" name="Rank" id="Rank" type="text" required placeholder="enter your Rank" class="form-control" />
+                    <span asp-validation-for="Rank" class="text-danger"></span>
+                </div>
+            </div>
+             <div class="form-group row">
+                <label style="font-size:35px" asp-for="Gender" id="Gender-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Gender" name="Gender" id="Gender" type="text" required placeholder="enter your Gender" class="form-control" />
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+
+           
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="Submit" class="btn btn-lg btn-block btn-info w-100" />
+                </div>
+                <div>
+                    <a asp-action="Index" class="btn btn-lg btn-block btn-info w-100"><i class="fas fa-sign-out-alt"></i>&nbspBack to List</a>
+
+                </div>
+            </div>
+
+        }
+
+        <script type="text/javascript">
+@if (TempData["status"] != null)
+{
+    <text>alert('Porter Created Successfully'); </text>
+}
+
+        </script>
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+﻿@model StaffAttendanceApps.Models.Staff;
+
+
+@{
+    ViewData["Title"] = "Staff Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="col-6">
+    <h2 class="text-info">Edit Staff</h2>
+</div>
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-4">
+        @using (@Html.BeginForm("Edit", "Staff", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model => model.StaffId)
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="StaffNo" id="StaffNo-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StaffNo" name="StaffNo" id="StaffNo" type="text" required placeholder="enter your StaffNo" class="form-control" />
+                    <span asp-validation-for="StaffNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="FirstName" id="FirstName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="FirstName" name="FirstName" id="FirstName" type="text" required placeholder="enter your FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="LastName" id="LastName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="LastName" name="LastName" id="LastName" type="text" required placeholder="enter your LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Department" id="Department-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                   >
+            </div>
+            <div> <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Department" name="Department" id="Department" type="text" required placeholder="enter your Department" class="form-control" />
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div
+                <label style="font-size:35px" asp-for="StaffLevel" id="Department-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StaffLevel" name="Department" id="StaffLevel" type="text" required placeholder="enter your StaffLevel" class="form-control" />
+                    <span asp-validation-for="StaffLevel" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="SignIn" disabled="disabled" class="btn btn-lg btn-block btn-success w-100" />
+                </div>
+
+            </div>
+
+
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="SignOut" class="btn btn-lg btn-block btn-success w-100" />
+                </div>
+
+            </div>
+
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+@if (TempData["status"] != null)
+{
+    <text>alert('Department updated Successfully'); </text>
+}
+
+</script>

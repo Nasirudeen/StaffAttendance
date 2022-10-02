@@ -1,0 +1,107 @@
+﻿
+@{
+
+    int _count = 0;
+    int _index = 0;
+    string _heading = "START";
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+
+        <title>ADELEKE UNIVERSITY HOSTEL MANAGEMENT APPLICATION  </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="300" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+        <environment include="Development">
+            <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="~/lib/fontawesome/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="~/css/style.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+            @*<link href="~/cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />*@
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/lib/fontawesome/css/font-awesome.min.css" asp-append-version="true" />
+            <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+            @*<link href="~/cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />*@
+        </environment>
+
+    </head>
+    <body oncontextmenu="return true">
+        <div class="brand clearfix" style="background-color:#fff; color:green;">
+            <a class="logo"><img src="" class="img-responsive" alt=""></a>
+            <nav>
+                <div class="header-title" style="width:70%; height:80px;">
+                    <span><img alt="" src="~/images/adelekestart.png" style="width:50px; text-align:center;font-family:Verdana; height:50px;"><b>&nbsp;ADELEKE UNIVERSITY HOSTEL MANAGEMENT APPLICATION &nbsp;</b></span>
+                </div>
+                <div>
+                    <ul class="ts-profile-nav">
+                        <li class="ts-account">
+
+                            <a style="background-color:blue;" href="~/Login/Login"><img src="~/images/adelekestart.png" class="ts-avatar hidden-side" alt="" style="font-weight:bolder;"> Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="brand" style="background-color:seagreen"></div>
+        <div class="ts-main-content">
+            <div class="content-wrapper-one">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title">@_heading</h2>
+                            <div>
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="main-footer">
+                        <div>
+                            <div>
+                                @*<strong>Copyright &copy; 2019&nbsp; <a href="">AlphaBeta Consulting LLP.</a> All rights reserved.</strong>*@
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+            <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+            @*<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>*@
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+            <script src="~/js/app.min.js" asp-append-version="true"></script>
+            <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+            @*<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>*@
+        </environment>
+
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
+
+}
+

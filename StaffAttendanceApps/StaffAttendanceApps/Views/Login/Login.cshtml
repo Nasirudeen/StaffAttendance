@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "_Layout";
+}
+
+<form class="form-signin" asp-action="Login" method="post" style="margin-top:30px;">
+
+    <div class="card border p-4" style="width:68%; margin-left:40%; margin-bottom:40%; height:500px;">
+
+        <h3><b>LOGIN</b> Panel</h3>
+
+        <h5>  @Html.ValidationSummary(false, "", new { @class = "text-danger" })</h5>
+        <div class="form-group row" style="margin-top:40px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label">EmailAddress</label>
+            <div class="col-auto">
+                <input type="emailaddress" class="form-control" id="inputEmail3" name="emailaddress" placeholder="emailaddress" style="width:350px;" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-auto">
+                <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password" style="width:350px;" required>
+                <button class="btn btn-lg btn-primary btn-block mt-5" type="submit" style="width:77%; margin-top:5%; margin-left:10%;">Login</button>
+                <div class="text-center p-t-10" style="text-align:center; vertical-align:top; margin-top:2px;">
+                    @*<a class="forgot" class="btn btn-link style="text-decoration:none; cursor:pointer;" href="~/Login/Register">Register ?</a>*@
+                    &nbsp; &nbsp;
+
+                    <br />
+
+                </div>
+
+                <div>
+                </div>
+</form>

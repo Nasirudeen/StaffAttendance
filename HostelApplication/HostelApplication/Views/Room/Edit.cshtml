@@ -1,0 +1,104 @@
+﻿@*@model HostelApplication.Models.Room;
+
+
+@{
+    ViewData["Title"] = "Room  Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="col-6">
+    <h2 class="text-info">Edit Room</h2>
+</div>
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-4">
+        @using (@Html.BeginForm("Edit", "Room", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model => model.RoomId)
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="RoomName" id="RoomName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="RoomName" name="RoomName" id="RoomName" type="text" required placeholder="enter your RoomName" class="form-control" />
+                    <span asp-validation-for="RoomName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="RoomType" id="RoomType-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="RoomType" name="RoomType" id="RoomType" type="text" required placeholder="enter your RoomType" class="form-control" />
+                    <span asp-validation-for="RoomType" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Location" id="Location-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Location" name="Location" id="Location" type="text" required placeholder="enter your Location" class="form-control" />
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="TotalBedspace" id="TotalBedspace-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="TotalBedspace" name="TotalBedspace" id="TotalBedspace" type="text" required placeholder="enter your TotalBedspace" class="form-control" />
+                    <span asp-validation-for="TotalBedspace" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Condition" id="Condition-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Condition" name="Condition" id="Condition" type="text" required placeholder="enter your Condition" class="form-control" />
+                    <span asp-validation-for="Condition" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Vacant" id="Vacant-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Vacant" name="Vacant" id="Vacant" type="text" required placeholder="enter your Vacant" class="form-control" />
+                    <span asp-validation-for="Vacant" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Created" id="Created-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Created" name="Created" id="Created" type="text" required placeholder="enter your Created" class="form-control" />
+                    <span asp-validation-for="Created" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Updated" id="Updated-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Updated" name="Updated" id="Updated" type="text" required placeholder="enter your Updated" class="form-control" />
+                    <span asp-validation-for="Updated" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="Edit" class="btn btn-lg btn-block btn-success w-100" />
+                </div>
+                <div>
+                    <a asp-action="Index" class="btn btn-lg btn-block btn-info w-100">Back to List</a>
+
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+@if (TempData["status"] != null)
+{
+    <text>alert('Role updated Successfully'); </text>
+}
+
+</script>*@

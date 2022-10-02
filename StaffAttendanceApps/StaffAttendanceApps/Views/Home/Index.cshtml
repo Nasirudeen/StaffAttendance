@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home  Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<div>
+    <table>
+        <tr>
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin") | User.IsInRole("Lecturer"))
+            {
+                <td><a style="background-color:blue;" href="~/Roaster/Index"><img src="~/images/table2.png" width="500PX" height="500px" class="ts-avatar hidden-side" alt="" style="font-weight:bolder;"></a> </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin") | User.IsInRole("Lecturer"))
+            {
+                <td> <a style="background-color:blue;" href="~/Exam/Index"><img src="~/images/table2.png" width="500PX" height="500px" class="ts-avatar hidden-side" alt="" style="font-weight:bolder;"></a> </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin"))
+            {
+                <td align="center"><a style="background-color:blue;" href="~/Student/Index"><img src="~/images/table3.png" width="500PX" height="450px" class="ts-avatar hidden-side" alt="" style="font-weight:bolder;"></a> </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin") | User.IsInRole("Lecturer"))
+            {
+                <td><a style="background-color:blue;" href="~/Attendance/Index"><img src="~/images/table1.png" width="500PX" height="400px" class="ts-avatar hidden-side" alt="" style="font-weight:bolder;">  </a> </td>
+            }
+        </tr>
+        <tr>
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin"))
+            {
+                <td align="center" style="font-size:50px; color:blue;"> LECTURE TIME TABLE  </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin"))
+            {
+                <td align="center" style="font-size:50px; color:forestgreen;"> EXAM TIME TABLE </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin"))
+            {
+                <td align="center" style="font-size:50px; color:skyblue;">STUDENT RECORD </td>
+            }
+            @if (User.IsInRole("SuperAdmin") | User.IsInRole("Admin") | User.IsInRole("Lecturer"))
+            {
+                <td align="center" style="font-size:50px; color:orangered;">ATTENDANCE RECORD </td>
+            }
+
+        </tr>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</div>
+<br />
+<br />
+<br />
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>

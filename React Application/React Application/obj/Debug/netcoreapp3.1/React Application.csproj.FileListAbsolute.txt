@@ -1,0 +1,53 @@
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.exe
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.deps.json
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.runtimeconfig.json
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.runtimeconfig.dev.json
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.pdb
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.Views.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\React Application.Views.pdb
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\USER\source\repos\React Application\React Application\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.AssemblyInfo.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.RazorAssemblyInfo.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.RazorAssemblyInfo.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\staticwebassets\React Application.StaticWebAssets.Manifest.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\staticwebassets\React Application.StaticWebAssets.xml
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\scopedcss\bundle\React Application.styles.css
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.TagHelpers.input.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.TagHelpers.output.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.RazorCoreGenerate.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.RazorTargetAssemblyInfo.cache
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.RazorTargetAssemblyInfo.cs
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.Views.pdb
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.csproj.CopyComplete
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.dll
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.pdb
+C:\Users\USER\source\repos\React Application\React Application\obj\Debug\netcoreapp3.1\React Application.genruntimeconfig.cache

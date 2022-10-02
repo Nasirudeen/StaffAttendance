@@ -1,0 +1,64 @@
+﻿
+@model StaffAttendanceApps.Models.Department;
+@{
+    ViewData["Title"] = "Department Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<div class="text-left">
+    <h1 class="text-info">Add New Department</h1>
+</div>
+<br />
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-6">
+        @using (@Html.BeginForm("Create", "Department", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <label style="font-size:35px" @*asp-for="DeptName"*@ id="DepartmentName-Label" class="control-label col-sm-3">DeptName</label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="DepartmentName" name="DepartmentName" id="DepartmentName" type="text" required placeholder="enter your DeptName" class="form-control" />
+                    <span asp-validation-for="DepartmentName" class="text-danger"></span>
+                </div>
+            </div>
+           
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="Submit" class="btn btn-lg btn-block btn-info w-100" />
+                </div>
+                <div>
+                    <a asp-action="Index" class="btn btn-lg btn-block btn-info w-100"><i class="fas fa-sign-out-alt"></i>&nbspBack to List</a>
+
+                </div>
+            </div>
+
+        }
+
+        <script type="text/javascript">
+@if (TempData["status"] != null)
+{
+    <text>alert('Department Created Successfully'); </text>
+}
+
+        </script>
+        <script>
+        @if (TempData["status"] != null)
+        {
+            <text>alert('Dept Created Successfully'); </text>
+        }
+        </script>
+        @section Scripts{
+            @{ <partial name="_ValidationScriptsPartial" />}
+        }
+
+
+
+
+
+
+
+

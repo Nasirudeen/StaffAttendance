@@ -1,0 +1,60 @@
+﻿@*@model HostelApplication.Models.Bedspace;
+@{
+    ViewData["Title"] = "Bedspace Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<<div class="col-6">
+    <h2 class="text-info">Delete Bedspace</h2>
+</div>
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-4">
+        @using (@Html.BeginForm("Delete", "Bedspace", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model => model.BedspaceId)
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="BedspaceNumber" id="BedspaceNumber-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="BedspaceNumber" name="BedspaceNumber" id="BedspaceNumber" type="text" required placeholder="enter your BedspaceNumber" class="form-control" />
+                    <span asp-validation-for="BedspaceNumber" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Type" id="Type-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Type" name="Type" id="Type" type="text" required placeholder="enter your Type" class="form-control" />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Created" id="Created-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Created" name="Created" id="Created" type="text" required placeholder="enter your Created" class="form-control" />
+                    <span asp-validation-for="Created" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Updated" id="Updated-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Updated" name="Updated" id="Updated" type="text" required placeholder="enter your Updated" class="form-control" />
+                    <span asp-validation-for="Updated" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+                    <input type="submit" value="Delete" class="btn btn-lg btn-block btn-success w-100" onclick="if(!confirm('Are you sure u want to delete the Record')) return No" />
+                </div>
+                <div>
+                    <a asp-action="Index" class="btn btn-lg btn-block btn-info w-100">Back to List</a>
+
+                </div>
+            </div>
+        }*@
+
+

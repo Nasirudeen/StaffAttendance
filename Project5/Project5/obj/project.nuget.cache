@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "LdYQyFf7a/pdLAh8PQBY03ds4qQuWAxZNThdB8SioenirodUb2XooG+zZqobbdwVTadAfT9OQwOLzaQ/TqJZ4Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Project5\\Project5\\Project5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.27\\microsoft.aspnetcore.nodeservices.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.1.27\\microsoft.aspnetcore.spaservices.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\3.1.27\\microsoft.aspnetcore.spaservices.extensions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.27\\microsoft.extensions.configuration.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.27\\microsoft.extensions.configuration.abstractions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.27\\microsoft.extensions.configuration.binder.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.27\\microsoft.extensions.dependencyinjection.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.27\\microsoft.extensions.dependencyinjection.abstractions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.27\\microsoft.extensions.fileproviders.abstractions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.27\\microsoft.extensions.fileproviders.physical.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.27\\microsoft.extensions.filesystemglobbing.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging\\3.1.27\\microsoft.extensions.logging.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.27\\microsoft.extensions.logging.abstractions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.27\\microsoft.extensions.logging.configuration.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.27\\microsoft.extensions.logging.console.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.options\\3.1.27\\microsoft.extensions.options.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.27\\microsoft.extensions.options.configurationextensions.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.27\\microsoft.extensions.primitives.3.1.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "LayoutStart";
+}
+
+
+<div>
+    <div class="info-box1" style="max-height: calc(100vh - 130px); text-align: center; background-color: #FFF; border-top: 1px solid rgba(0,0,0,0.1); border-left: 1px solid rgba(0,0,0,0.1);">
+        <div class="image-padding">
+            <img id="slides" src="~/images/adeleke2.png" alt="" class="content-image">
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        var imgSlides = document.getElementById("slides");
+        var images = ["../../images/adeleke2.png", "../../images/adeleke1.png", "../images/adeleke3.png", "../../images/adeleke4.png", "../../images/adeleke5.png", "../../images/adeleke3.png"];
+        var imgIndex = 0;
+        var timeImterval = 3000;
+        function slideImages() {
+            imgSlides.setAttribute("src", images[imgIndex]);
+            imgIndex++;
+            if (imgIndex >= images.length) {
+                imgIndex = 0;
+            }
+        }
+        setInterval('slideImages()', timeImterval);
+    </script>
+}

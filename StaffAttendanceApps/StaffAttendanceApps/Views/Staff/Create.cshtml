@@ -1,0 +1,111 @@
+﻿@model StaffAttendanceApps.Models.Staff;
+
+
+@{
+    ViewData["Title"] = "Staff  Page";
+    Layout = "~/Views/Shared/LayoutNew.cshtml";
+}
+<br />
+<br />
+<br />
+<div class="text-left">
+    <h1 class="text-info">Add New Staff</h1>
+</div>
+<br />
+<hr />
+<div class="row ml-4 mt-3">
+    <div class="col-md-6">
+        @using (@Html.BeginForm("Create", "Staff", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="StaffNo" id="StaffID-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StaffNo" name="StaffNo" id="StaffNo" type="text" required placeholder="enter your StaffNo" class="form-control" />
+                    <span asp-validation-for="StaffNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="FirstName" id="FirstName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="FirstName" name="FirstName" id="FirstName" type="text" required placeholder="enter your FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="LastName" id="LastName-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="LastName" name="LastName" id="LastName" type="text" required placeholder="enter your LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="Department" id="Department-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="Department" name="Department" id="Department" type="text" required placeholder="enter your Department" class="form-control" />
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label style="font-size:35px" asp-for="StaffLevel" id="StaffLevel-Label" class="control-label col-sm-3"></label><br />
+                <div class="col-sm-9">
+                    <input class="form-control inputstl" style="width: 450px; font-size: 35px; height:65px;" asp-for="StaffLevel" name="StaffLevel" id="StaffLevel" type="text" required placeholder="enter your StaffLevel" class="form-control" />
+                    <span asp-validation-for="StaffLevel" class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+
+                <div class="col-3 offset-3">
+
+                    <Button style="display: @{  somevalue == false ?: @"none" : @:" block};"> sign in</Button>
+                    @*<input type="submit" onclick="signin()" id="sign-in" value="SignIn" class="btn btn-lg btn-block btn-Primary w-100" />*@
+                </div>
+
+                <div class="col-3 offset-3">
+                    <Button style = "display: @{  somevalue == true ?: @"none" : @:" block};"> sign Out</Button>
+
+
+                    @*<input type="submit" onclick="clicksignout()" id="sign-up" value="SignOut" class="btn btn-lg btn-block btn-success w-100" disabled />*@
+
+                </div>
+
+            </div>
+
+
+        }
+    </div>
+</div>
+
+<script>
+    function signin() {
+        document.getElementById('sign-up').disabled = true
+        start()
+    }
+
+
+    function start() {
+        setTimeout(() => {
+            clicksignin()
+        }, 10000);
+    }
+    function clicksignin() {
+
+        document.getElementById('sign-up').disabled = false
+        document.getElementById('sign-in').disabled = true
+
+    }
+
+    function clicksignout() {
+        document.getElementById('sign-in').disabled = false
+        document.getElementById('sign-up').disabled = true
+    }
+</script>
+
+
+
+
